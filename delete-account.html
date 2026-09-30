@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Your Account — Fizeek</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #000000;
+    color: #d4d4d4;
+    line-height: 1.75;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page-header {
+    padding: 60px 24px 40px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+
+  .effective-date {
+    font-size: 0.875rem;
+    color: #737373;
+  }
+
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  .intro {
+    font-size: 1rem;
+    color: #a3a3a3;
+    margin-bottom: 40px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .section {
+    margin-bottom: 36px;
+  }
+
+  .section-number {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #5eead4;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    margin-bottom: 14px;
+    color: #d4d4d4;
+    font-size: 0.9375rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  .steps {
+    counter-reset: step;
+    list-style: none;
+    margin: 16px 0 0;
+  }
+
+  .steps li {
+    counter-increment: step;
+    position: relative;
+    padding: 0 0 14px 40px;
+    color: #d4d4d4;
+    font-size: 0.9375rem;
+  }
+
+  .steps li:last-child {
+    padding-bottom: 0;
+  }
+
+  .steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(94, 234, 212, 0.1);
+    border: 1px solid rgba(94, 234, 212, 0.3);
+    color: #5eead4;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .data-category {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+
+  .data-category-title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .data-category p {
+    color: #a3a3a3;
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
+
+  .service-list {
+    margin: 16px 0;
+  }
+
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 0.9375rem;
+  }
+
+  .service-item:last-child {
+    border-bottom: none;
+  }
+
+  .service-name {
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  .service-purpose {
+    color: #737373;
+    font-size: 0.8125rem;
+    text-align: right;
+    max-width: 55%;
+  }
+
+  .highlight-box {
+    background: rgba(94, 234, 212, 0.05);
+    border-left: 3px solid #5eead4;
+    padding: 16px 20px;
+    border-radius: 0 10px 10px 0;
+    margin: 16px 0;
+  }
+
+  .highlight-box p {
+    color: #a3e8db;
+    font-size: 0.9375rem;
+    margin-bottom: 0;
+  }
+
+  .contact-box {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .contact-box a {
+    color: #5eead4;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-box a:hover {
+    text-decoration: underline;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 40px 24px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    color: #525252;
+    font-size: 0.8125rem;
+  }
+
+  a { color: #5eead4; }
+  strong { color: #ffffff; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Delete Your Account</h1>
+  <p class="effective-date">Last updated: September 30, 2026</p>
+</div>
+
+<div class="container">
+
+  <p class="intro">
+    This page explains how to delete your <strong>Fizeek</strong> account and what happens to your data when you do. Fizeek is published by <strong>Fizeek LLC</strong>. There are two ways to delete your account: from inside the app, or by emailing us.
+  </p>
+
+  <!-- 1 -->
+  <div class="section">
+    <div class="section-number">01</div>
+    <h2>Delete your account in the app</h2>
+    <p>This is the fastest way, and it takes effect immediately.</p>
+    <ol class="steps">
+      <li>Open Fizeek and tap <strong>Profile</strong> in the bottom bar.</li>
+      <li>Tap the <strong>pencil</strong> icon in the top right to open Edit Profile.</li>
+      <li>Scroll to the bottom, to the section headed <strong>Account</strong>.</li>
+      <li>Tap <strong>Delete Account</strong>, the last row, shown in red.</li>
+      <li>Read the warning and tap <strong>Continue</strong>.</li>
+      <li>Type <strong>DELETE</strong> in the box to confirm, then tap <strong>Delete Forever</strong>.</li>
+    </ol>
+    <div class="highlight-box">
+      <p>Your account and your data are deleted straight away. There is no waiting period and no way to undo it. If you want a copy of anything, save it before you start.</p>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="section">
+    <div class="section-number">02</div>
+    <h2>Delete your account by email</h2>
+    <p>If you cannot get into the app, email us at <a href="mailto:support@fizeekapp.com">support@fizeekapp.com</a> and ask us to delete your account.</p>
+    <p>Please send the email <strong>from the email address on the account</strong>. That is how we confirm the request is really from you. If you send it from a different address we will have to ask you for something else that proves the account is yours, which slows things down.</p>
+    <p><strong>We will reply within 30 days.</strong> That is our commitment on data requests, including deletion requests, and it matches Section 10 of our Privacy Policy. Once we delete the account, the effect is exactly the same as deleting it in the app.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="section">
+    <div class="section-number">03</div>
+    <h2>What gets deleted</h2>
+    <p>Deleting your account removes all of the following from our database and our file storage. This is not a summary. It is the full list of what the deletion actually does.</p>
+
+    <div class="data-category">
+      <div class="data-category-title">Your account and profile</div>
+      <p>Your login, your email address, your username, your name, your date of birth, your bio, your profile photo, your banner image, your push notification token, and any answers you gave during sign up.</p>
+    </div>
+
+    <div class="data-category">
+      <div class="data-category-title">Your training data</div>
+      <p>Every workout and template you built, your splits, your full workout history, every set with its weight and reps, your cardio entries, your personal records, your progress trends, your body weight entries, your goals, your achievements, your setup cues, and any request you sent us to set up a split for you.</p>
+    </div>
+
+    <div class="data-category">
+      <div class="data-category-title">Your social activity</div>
+      <p>Your posts, your comments, your likes, who you follow and who follows you, your favorite friends, and your blocked list.</p>
+    </div>
+
+    <div class="data-category">
+      <div class="data-category-title">Your messages</div>
+      <p>Your direct messages and your group chat messages, including messages you sent to other people. Those are removed from the other person's conversation too, so your messages do not stay on their screen after you leave.</p>
+    </div>
+
+    <div class="data-category">
+      <div class="data-category-title">Your photos and files</div>
+      <p>Every image you uploaded is deleted from our storage, not just unlinked from your account. That covers post photos, workout photos, progress photos, your profile picture, your profile banner, and photos you sent in messages.</p>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="section">
+    <div class="section-number">04</div>
+    <h2>What we keep, and for how long</h2>
+    <p>Five kinds of record stay in our database after your account is gone. In every case <strong>your name, your email address and your account ID are removed from them</strong>, so the record is no longer linked to you or to any person. We keep them because deleting them would break something for someone else, or because we need them for our own records.</p>
+
+    <div class="data-category">
+      <div class="data-category-title">Feedback you sent us</div>
+      <p>If you used Send Feedback in the app, the text of that feedback stays, with your account ID stripped out. We keep it so we do not lose a bug report or a suggestion.</p>
+    </div>
+
+    <div class="data-category">
+      <div class="data-category-title">Subscription and purchase records</div>
+      <p>If you ever subscribed, the record of those payment events stays, with your account ID stripped out. We keep it for tax and accounting.</p>
+    </div>
+
+    <div class="data-category">
+      <div class="data-category-title">Referral records</div>
+      <p>If you used an ambassador code, or your own code was used by someone else, that referral record stays, with the account IDs stripped out.</p>
+    </div>
+
+    <div class="data-category">
+      <div class="data-category-title">Payments we made to you</div>
+      <p>If you were an ambassador and we paid you, the record of that payment stays, with your account ID stripped out. A row here means money actually changed hands, so we keep it for tax and accounting in the same way a business keeps any other payment record.</p>
+    </div>
+
+    <div class="data-category">
+      <div class="data-category-title">Group chats you created</div>
+      <p>If you started a group chat, the group itself stays so the other members keep their conversation. Your messages in it are deleted and your name is removed as its creator.</p>
+    </div>
+
+    <p><strong>How long:</strong> we do not currently put an expiry date on these five. They stay in our database, without your identity attached, until we delete them. If you want the first and the last of them removed as well, email us at <a href="mailto:support@fizeekapp.com">support@fizeekapp.com</a> and we will do it by hand. The three money records (purchases, referrals and payments) we have to keep for tax and accounting.</p>
+    <p>Separately, deleted data can sit in our database provider's encrypted backups for a short time before those backups are overwritten. We cannot reach into a backup to remove one account from it.</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="section">
+    <div class="section-number">05</div>
+    <h2>Copies held by other companies</h2>
+    <p>We want to be straight with you about this, because it is the part most deletion pages leave out.</p>
+    <p>Three of the companies that help us run Fizeek keep their own copy of a small amount of data about you. <strong>Deleting your account in the app does not reach those copies.</strong> The deletion clears our database and our storage, and it does not send a delete instruction to these three.</p>
+
+    <div class="service-list">
+      <div class="service-item">
+        <span class="service-name">Sentry</span>
+        <span class="service-purpose">Crash reports. Holds your account ID and email address, your device model and operating system, and the details of any crash you hit, which can include workout values such as the weight and reps of the set you were saving.</span>
+      </div>
+      <div class="service-item">
+        <span class="service-name">PostHog</span>
+        <span class="service-purpose">Product analytics. Holds your account ID and email address, and a small fixed set of usage events such as signing up, finishing a workout, or viewing the upgrade screen. It never holds anything you typed.</span>
+      </div>
+      <div class="service-item">
+        <span class="service-name">RevenueCat</span>
+        <span class="service-purpose">Subscription management. Holds your account ID and your purchase and subscription history, plus a note of any ambassador code you used.</span>
+      </div>
+    </div>
+
+    <p>If you want those copies deleted too, email <a href="mailto:support@fizeekapp.com">support@fizeekapp.com</a> and say so. We will delete your Sentry crash reports and your PostHog events. At RevenueCat we will delete the extra labels we attach to your account, such as a note that you were given Fizeek Pro for free or that you used an ambassador code. <strong>Your purchase and subscription history at RevenueCat we keep</strong>, for tax and accounting, in the same way as the money records in section 04.</p>
+    <p>We are working on making this automatic, so that deleting your account in the app clears these copies as well. Until it is, this page tells you where you stand.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="section">
+    <div class="section-number">06</div>
+    <h2>Deleting the app is not the same thing</h2>
+    <p>Uninstalling Fizeek from your phone does not delete your account. Your data stays on our servers and you can sign back in. To remove your data you have to use one of the two routes on this page.</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="section">
+    <div class="section-number">07</div>
+    <h2>Questions</h2>
+    <p>Our <a href="privacy-policy.html">Privacy Policy</a> explains what we collect and why. If anything on this page is unclear, or you are not sure whether your account was deleted, get in touch and we will check.</p>
+    <div class="contact-box">
+      <p style="margin-bottom: 6px; color: #a3a3a3; font-size: 0.875rem;">Fizeek LLC</p>
+      <a href="mailto:support@fizeekapp.com">support@fizeekapp.com</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  &copy; 2026 Fizeek LLC. All rights reserved. &middot; <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+</div>
+
+</body>
+</html>
