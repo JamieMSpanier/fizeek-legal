@@ -190,7 +190,11 @@
        Branch legal/coaching-terms; NOT PUBLISHED. Changed: the intro, 01 (Coaching
        Information, Payment Information), 02 (How We Use), 03 (Stripe and Vercel added;
        Resend and Expo widened), new 06 (Coaching), 08 (Data Retention), 09 (Account
-       Deletion), 13 (Your Rights); 06-15 renumbered, in-text references follow. -->
+       Deletion), 13 (Your Rights); 06-15 renumbered, in-text references follow.
+Batch U, item 12 (2026-10-29): 03's Anthropic line matches 15; 06 says what stays when a
+coach deletes their account (the frozen copy needs app migration 700, NOT APPLIED); 09 and
+Terms 14 name where each person deletes on the website; every changed line fact-checked
+against the code. Still a draft. -->
   <div class="warning-box">
     <p><strong>Draft for review — not in force.</strong> This version adds coaching and has not been reviewed by a lawyer.</p>
   </div>
@@ -207,7 +211,7 @@
 
     <div class="data-category">
       <div class="data-category-title">Account Information</div>
-      <p>When you create an account, we collect your email address, username, full name (optional), date of birth, and optionally a profile photo and bio. If you sign in with Apple or Google, we receive the information you choose to share through that sign-in service. Sign in with Apple is offered on iPhone only. If you begin creating an account but do not finish, the answers you entered are stored temporarily and automatically deleted after 30 days.</p>
+      <p>When you create an account, we collect your email address, username, full name (optional), date of birth, and optionally a profile photo and bio. If you sign in with Apple or Google, we receive the information you choose to share through that sign-in service. Sign in with Apple is offered on iPhone and on the coach website, not in the Android app. If you begin creating an account but do not finish, the answers you entered are stored temporarily and automatically deleted after 30 days.</p>
     </div>
 
     <div class="data-category">
@@ -232,7 +236,7 @@
 
     <div class="data-category">
       <div class="data-category-title">Payment Information</div>
-      <p>Coaching payments are handled by Stripe. When you pay a coach, or a coach pays for a coach plan, Stripe collects your card details; we never receive or store your card number. We keep the price, the billing schedule, the status of each payment and the dates involved, so the App can show them to you and to your coach.</p>
+      <p>Coaching payments are handled by Stripe. When you pay a coach, or a coach pays for a coach plan, Stripe collects your card details; we never receive or store your card number. We keep the price, the billing schedule, the total paid so far, the status and dates of the arrangement, Stripe's reference numbers for it, and a copy of each message Stripe sends us about it, so the App can show them to you and to your coach.</p>
     </div>
 
     <div class="data-category">
@@ -256,7 +260,7 @@
       <strong>Communicate with you</strong> — sending transactional emails related to your account (such as password resets) and in-app notifications about activity relevant to you (such as when someone comments on your post).
     </p>
     <p>
-      <strong>Run coaching</strong> — showing your coach the information described in Section 06 while you are coached, delivering your coach's plans, replies and reminders to you, sending invitation emails on a coach's behalf, and processing coaching payments through Stripe.
+      <strong>Run coaching</strong> — showing your coach the information described in Section 06 while you are coached, and afterwards as Section 06 describes, delivering your coach's plans, replies and reminders to you, sending invitation emails on a coach's behalf, and processing coaching payments through Stripe.
     </p>
     <p>
       <strong>Maintain safety</strong> — enforcing our Terms of Service, responding to reports of abusive content or messages, and protecting the security of the App and its users.
@@ -276,23 +280,23 @@
       </div>
       <div class="service-item">
         <span class="service-name">Sentry</span>
-        <span class="service-purpose">Crash reporting &amp; error monitoring — receives your user ID and email address, your device model and operating system, and the details of a crash. Those details can include workout values, such as the weight and reps of the set you were saving.</span>
+        <span class="service-purpose">Crash reporting &amp; error monitoring — receives your user ID (crash reports sent before October 2026 may also hold your email address), your device model and operating system, and the details of a crash. Those details can include workout values, such as the weight and reps of the set you were saving.</span>
       </div>
       <div class="service-item">
         <span class="service-name">PostHog</span>
-        <span class="service-purpose">Limited product analytics (a small, fixed set of usage events) — receives those events, your user ID and your email address. It does not receive your location, and it does not record your screen or your taps.</span>
+        <span class="service-purpose">Limited product analytics (a small, fixed set of usage events) — receives those events, your user ID and your email address. We switch off its location lookup, and it does not record your screen or your taps.</span>
       </div>
       <div class="service-item">
         <span class="service-name">Expo</span>
-        <span class="service-purpose">Push notification delivery &amp; app updates — receives your device's notification token and the text of each notification sent to you, which can include another member's username or, for coaching, your coach's name, a due date or a price.</span>
+        <span class="service-purpose">Push notification delivery &amp; app updates — receives your device's notification token and the text of each notification sent to you, which can include the words of a message someone sends you, another member's username or, for coaching, your coach's name, a due date or a price.</span>
       </div>
       <div class="service-item">
         <span class="service-name">Resend</span>
-        <span class="service-purpose">Transactional email delivery — receives the address an email is sent to and the contents of that email, such as feedback you send us, a request to have a training split set up, or a coach's invitation (your email address, your coach's name and a link).</span>
+        <span class="service-purpose">Transactional email delivery — receives the address an email is sent to and the contents of that email, such as feedback you send us, a request to have a training split set up, a coach's invitation (your email address, your coach's name and a link), or a report of content to our moderators, which quotes the reported post, comment or message.</span>
       </div>
       <div class="service-item">
         <span class="service-name">Stripe</span>
-        <span class="service-purpose">Coaching payments — receives your name, email address and card details when you pay a coach or pay for a coach plan, the amount and schedule of each payment, and which coach and client a payment is between. A coach who takes payments also gives Stripe the details Stripe needs to pay them. Your card number goes to Stripe, never to us.</span>
+        <span class="service-purpose">Coaching payments — receives your email address and card details when you pay a coach or pay for a coach plan, the amount and schedule of each payment, and which coach and client a payment is between. A coach who takes payments also gives Stripe the details Stripe needs to pay them. Your card number goes to Stripe, never to us. Because you pay on your coach's own Stripe account, your coach can see your email address and your payments there, but not your full card number.</span>
       </div>
       <div class="service-item">
         <span class="service-name">Vercel</span>
@@ -304,7 +308,7 @@
       </div>
       <div class="service-item">
         <span class="service-name">Apple Sign In</span>
-        <span class="service-purpose">Authentication (if you choose this method; offered on iPhone only) — receives the sign-in request. We receive back whatever you choose to share.</span>
+        <span class="service-purpose">Authentication (if you choose this method; offered on iPhone and on the coach website) — receives the sign-in request. We receive back whatever you choose to share.</span>
       </div>
       <div class="service-item">
         <span class="service-name">Google Sign In</span>
@@ -312,7 +316,7 @@
       </div>
       <div class="service-item">
         <span class="service-name">Anthropic</span>
-        <span class="service-purpose">AI workout building — receives only the sentence you type when you add exercises by text. We do not store it and we do not log it, and it is not used to train models.</span>
+        <span class="service-purpose">AI workout building — receives the words you type when you add exercises by text, the names and order of the exercises already in that workout, and which exercise you are on if you are part-way through it; nothing that identifies you (Section 15). We do not store what you type and we do not log it, and it is not used to train models.</span>
       </div>
     </div>
 
@@ -326,7 +330,7 @@
     <div class="section-number">04</div>
     <h2>Apple Health and Apple Watch (iPhone only)</h2>
     <p>This section applies on iPhone. On Android, Fizeek does not connect to any health app and there is no watch app, so none of it applies to you.</p>
-    <p>If you allow it, Fizeek reads your bodyweight from Apple Health and writes bodyweight you log in Fizeek back to it. Workouts logged from your Apple Watch are saved to Apple Health, including duration and estimated calories, so they count toward your Activity rings. Health data is only used to show you your own information inside Fizeek. Bodyweight read from Apple Health is saved to your Fizeek account so it appears in your history, the same as bodyweight you type in yourself. It is never used for advertising, never sold, and never shared with anyone. You can turn this off at any time in the Health app on your iPhone. Your Apple Watch talks only to the Fizeek app on your phone; it never contacts our servers directly.</p>
+    <p>If you allow it, Fizeek reads your bodyweight from Apple Health and writes bodyweight you log in Fizeek back to it. Workouts logged from your Apple Watch are saved to Apple Health, including duration and estimated calories, so they count toward your Activity rings. Health data is only used to show you your own information inside Fizeek. Bodyweight read from Apple Health is saved to your Fizeek account so it appears in your history, the same as bodyweight you type in yourself. It is never used for advertising, never sold, and never shared with anyone other than a coach you choose, who can see your body weight (Section 06). You can turn this off at any time in the Health app on your iPhone. Your Apple Watch talks only to the Fizeek app on your phone; it never contacts our servers directly.</p>
   </div>
 
   <!-- 5 -->
@@ -350,7 +354,8 @@
     <p><strong>While you are coached</strong>, your coach can see your workouts and every set you log, your training history, trends and personal records, your body weight and other metrics you track, your nutrition plan and how closely you followed it, your progress photos, your check-in answers (including any health answers), the photos and videos on your check-ins, any lab results either of you uploads, and your email address. Your coach does not see your direct messages with other members.</p>
     <p><strong>Your coach's private notes.</strong> A coach can keep notes about you that you do not see; they belong to the coach and are not part of your data export. A health note your coach shares with you is part of your export.</p>
     <p><strong>When your coaching ends</strong>, nothing is deleted. Your former coach keeps seeing what you logged up to the day your coaching ended, but nothing you log afterwards, and no longer your email address. They also keep seeing your plans and your profile settings, and if you change those later, they see the change. We also keep a copy of your training program as it stood on that day; it is included in your data export.</p>
-    <p><strong>Deleting your account</strong> removes your coaching data too, and your former coach no longer sees any of it.</p>
+    <p><strong>If your coach deletes their account</strong>, your own records stay: your workouts and routines, your check-ins and your answers, the photos and videos you sent, and the meals and foods you ticked off. What your coach made for you is deleted with their account: your meal plan, your cardio and supplement plans, their notes and the videos they sent, and your billing details with them. We keep a copy of your training program and your meal plan as they stood on that day.</p>
+    <p><strong>Deleting your account</strong> removes your coaching data too, and your former coach no longer sees any of it in the App. Your coach's own Stripe records of your payments are kept by Stripe.</p>
   </div>
 
   <!-- 7 -->
@@ -365,11 +370,11 @@
     <div class="section-number">08</div>
     <h2>Data Retention</h2>
     <p>We retain your data for as long as your account is active. Workout history, posts, messages, and profile information are stored so you can access them whenever you use the App.</p>
-    <p>If you delete your account, we delete your personal data from our systems. This includes your profile information, workout data, posts, comments, and messages (including messages you sent to other users, which are removed from their conversations) as well as the photos and images you uploaded, which are deleted from our storage.</p>
-    <p><strong>Five kinds of record stay in our database after your account is gone.</strong> In every case your name, your email address and your account ID are removed from them first, so the record is no longer linked to you or to any person. They are: feedback you sent us through the App; the record of your subscription and purchase events; any ambassador referral record involving you; the record of any ambassador payment we made to you; and any group chat you created, which stays so its other members keep their conversation. We do not currently put an expiry date on these five. The three money records (purchases, referrals and payments) we keep for tax and accounting. The other two we will remove on request, by hand.</p>
-    <p><strong>When a coaching relationship ends, nothing is deleted</strong>: what your former coach can still see is set out in Section 06. Coaching data stays until you delete your account.</p>
-    <p><strong>Stripe keeps its own records of coaching payments.</strong> Deleting your account cancels any coaching payment or coach plan you have, but Stripe keeps the record of past payments and of the card you saved, under its own privacy policy and the law it must follow; we cannot delete those for you.</p>
-    <p><strong>Three of our providers keep their own copy of a small amount of data about you, and deleting your account does not reach those copies.</strong> Sentry holds crash reports, PostHog holds a small fixed set of usage events, and RevenueCat holds your purchase and subscription history. Account deletion clears our database and our storage; it does not send a delete instruction to these three. If you ask us to, we will delete your Sentry crash reports and your PostHog events, and at RevenueCat we will delete the extra labels attached to your account, such as a note that you were given Fizeek Pro for free or that you used an ambassador code. Your purchase and subscription history at RevenueCat we keep, for tax and accounting, for the same reason as the money records above. We are working on making the rest of this automatic.</p>
+    <p>If you delete your account, we delete your personal data from our systems. This includes your profile information, workout data, posts, comments, and messages (including messages you sent to other users, which are removed from their conversations) as well as the photos and images you uploaded, which are deleted from our storage (the photo of a group chat stays with the group).</p>
+    <p><strong>Six kinds of record stay in our database after your account is gone.</strong> They are: feedback you sent us through the App; the record of your subscription and purchase events; any ambassador referral record involving you; the record of any ambassador payment we made to you; any group chat you created, which stays so its other members keep their conversation; and any custom exercise you made, which is switched off but kept so that lifts other people logged with it still have a name. Your name, your email address and your account ID are removed from the first five, with one exception: the copies we keep of the payment messages Stripe and the App Store send us still contain your account ID or email address. We do not currently put an expiry date on these six. The three money records (purchases, referrals and payments) we keep for tax and accounting. Your feedback and a group chat you created we will remove on request, by hand; a custom exercise stays so other people's logged lifts keep its name.</p>
+    <p><strong>When a coaching relationship ends, nothing is deleted</strong>: what your former coach can still see is set out in Section 06. Your coaching data stays until you delete your account; what your coach made for you is deleted if they delete theirs (Section 06).</p>
+    <p><strong>Stripe keeps its own records of coaching payments.</strong> Deleting your account cancels any coaching payment or coach plan you have, but Stripe keeps the record of past payments and of the card you saved, under its own privacy policy and the law it must follow; we do not delete those for you.</p>
+    <p><strong>Three of our providers keep their own copy of a small amount of data about you, and deleting your account does not reach those copies.</strong> Sentry holds crash reports, PostHog holds a small fixed set of usage events, and RevenueCat holds your purchase and subscription history (Stripe's own records are described above). Account deletion clears our database and our storage; it does not send a delete instruction to these three. If you ask us to, we will delete your Sentry crash reports and your PostHog events, and at RevenueCat we will delete the extra labels attached to your account, such as a note that you were given Fizeek Pro for free or that you used an ambassador code. Your purchase and subscription history at RevenueCat we keep, for tax and accounting, for the same reason as the money records above. We are working on making the rest of this automatic.</p>
     <p>Separately, deleted data can sit in our database provider's encrypted backups for a short time before those backups are overwritten, and we may retain limited data where required by law or to prevent fraud and abuse.</p>
   </div>
 
@@ -377,9 +382,9 @@
   <div class="section">
     <div class="section-number">09</div>
     <h2>Account Deletion</h2>
-    <p>You can delete your account at any time from within the App. Open the Profile tab, tap the pencil icon in the top right to open Edit Profile, scroll to the section headed Account, and tap Delete Account. You will be asked to confirm twice, including typing DELETE. Account deletion removes your profile, workout data, posts, messages, and uploaded photos from the App and our storage. It takes effect immediately. This action is permanent and cannot be undone. On the coach website you can delete your account from Settings (coaches) or from your payment page (clients); it asks you to confirm once. Deleting your account also cancels any coaching payment you make or receive through Fizeek and any coach plan.</p>
+    <p>You can delete your account at any time from within the App. Open the Profile tab, tap the pencil icon in the top right to open Edit Profile, scroll to the section headed Account, and tap Delete Account. You will be asked to confirm twice, including typing DELETE. Account deletion removes your profile, workout data, posts, messages, and uploaded photos from the App and our storage. It takes effect immediately. This action is permanent and cannot be undone. On the coach website a coach deletes their account from Profile in the account menu, which opens the Account card in Settings, and a client who pays a coach deletes theirs from the Account card on their payment page; it asks you to confirm once. Deleting your account also cancels any coaching payment you make or receive through Fizeek and any coach plan.</p>
     <p>If you are unable to delete your account through the App, you may contact us at the email address listed below and we will process your request. Please write from the email address on the account, so we can confirm the request is really from you.</p>
-    <p>Our <a href="delete-account.html">Account Deletion page</a> sets out the same steps, the full list of what is deleted, and the records described in Section 08 that are kept or held by a provider.</p>
+    <p>Our <a href="delete-account.html">Account Deletion page</a> sets out the in-app steps, what is deleted, and the records described in Section 08 that are kept or held by a provider.</p>
   </div>
 
   <!-- 9 -->
@@ -410,7 +415,7 @@
     <div class="section-number">13</div>
     <h2>Your Rights</h2>
     <p>Depending on where you live, you may have certain rights regarding your personal data, including:</p>
-    <p><strong>Access &amp; Portability</strong> — You can download a copy of your data at any time directly in the App: go to your profile settings and tap "Request My Data." You will receive a download link containing your data in a portable format, including your coaching data (your plans, check-ins, payments and the copy of your program kept when a coaching relationship ends), but not a coach's private notes about you. You can also contact us to request a copy.</p>
+    <p><strong>Access &amp; Portability</strong> — You can download a copy of your data once a day in the phone app: go to your profile settings and tap "Request My Data." You will receive a download link containing your data in a portable format, including your coaching data (your plans, check-ins, payments and the copy of your program kept when a coaching relationship ends), but not a coach's private notes about you. You can also contact us to request a copy.</p>
     <p><strong>Correction</strong> — You can update your profile information directly in the App, or contact us to correct inaccuracies.</p>
     <p><strong>Deletion</strong> — You can delete your account and data as described in Section 08, or contact us to request deletion.</p>
     <p><strong>Objection</strong> — You can object to certain processing of your data where applicable.</p>

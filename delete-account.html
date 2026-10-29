@@ -210,6 +210,19 @@
 
   a { color: #5eead4; }
   strong { color: #ffffff; font-weight: 600; }
+  /* Batch U, item 12 — the draft banner, the terms page's own .warning-box. */
+  .warning-box {
+    background: rgba(239, 68, 68, 0.05);
+    border-left: 3px solid #ef4444;
+    padding: 16px 20px;
+    border-radius: 0 10px 10px 0;
+    margin: 16px 0;
+  }
+  .warning-box p {
+    color: #fca5a5;
+    font-size: 0.9375rem;
+    margin-bottom: 0;
+  }
 </style>
 </head>
 <body>
@@ -220,6 +233,12 @@
 </div>
 
 <div class="container">
+
+  <!-- 🔴 PROVISIONAL DRAFT — batch U, item 12 (2026-10-29). Fact corrections only, for Jamie
+       and a lawyer; NOT PUBLISHED. This page still predates coaching and needs its own rewrite. -->
+  <div class="warning-box">
+    <p><strong>Draft for review — not in force.</strong> This version has not been reviewed by a lawyer.</p>
+  </div>
 
   <p class="intro">
     This page explains how to delete your <strong>Fizeek</strong> account and what happens to your data when you do. Fizeek is published by <strong>Fizeek LLC</strong>. There are two ways to delete your account: from inside the app, or by emailing us.
@@ -249,14 +268,14 @@
     <h2>Delete your account by email</h2>
     <p>If you cannot get into the app, email us at <a href="mailto:support@fizeekapp.com">support@fizeekapp.com</a> and ask us to delete your account.</p>
     <p>Please send the email <strong>from the email address on the account</strong>. That is how we confirm the request is really from you. If you send it from a different address we will have to ask you for something else that proves the account is yours, which slows things down.</p>
-    <p><strong>We will reply within 30 days.</strong> That is our commitment on data requests, including deletion requests, and it matches Section 10 of our Privacy Policy. Once we delete the account, the effect is exactly the same as deleting it in the app.</p>
+    <p><strong>We will reply within 30 days.</strong> That is our commitment on data requests, including deletion requests, and it matches Section 13 of our Privacy Policy. Once we delete the account, the effect is exactly the same as deleting it in the app.</p>
   </div>
 
   <!-- 3 -->
   <div class="section">
     <div class="section-number">03</div>
     <h2>What gets deleted</h2>
-    <p>Deleting your account removes all of the following from our database and our file storage. This is not a summary. It is the full list of what the deletion actually does.</p>
+    <p>Deleting your account removes all of the following from our database and our file storage. Your coaching data goes too (Section 06 of our Privacy Policy), as do your data exports, your notifications and your search history.</p>
 
     <div class="data-category">
       <div class="data-category-title">Your account and profile</div>
@@ -280,7 +299,7 @@
 
     <div class="data-category">
       <div class="data-category-title">Your photos and files</div>
-      <p>Every image you uploaded is deleted from our storage, not just unlinked from your account. That covers post photos, workout photos, progress photos, your profile picture, your profile banner, and photos you sent in messages.</p>
+      <p>Every image you uploaded is deleted from our storage, not just unlinked from your account. That covers post photos, workout photos, progress photos, your profile picture, your profile banner, and photos you sent in messages. The photo of a group chat stays with the group.</p>
     </div>
   </div>
 
@@ -288,7 +307,7 @@
   <div class="section">
     <div class="section-number">04</div>
     <h2>What we keep, and for how long</h2>
-    <p>Five kinds of record stay in our database after your account is gone. In every case <strong>your name, your email address and your account ID are removed from them</strong>, so the record is no longer linked to you or to any person. We keep them because deleting them would break something for someone else, or because we need them for our own records.</p>
+    <p>Six kinds of record stay in our database after your account is gone. From the first five <strong>your name, your email address and your account ID are removed</strong>, with the one exception noted under subscription records, so the record is no longer linked to you or to any person. We keep them because deleting them would break something for someone else, or because we need them for our own records.</p>
 
     <div class="data-category">
       <div class="data-category-title">Feedback you sent us</div>
@@ -297,7 +316,7 @@
 
     <div class="data-category">
       <div class="data-category-title">Subscription and purchase records</div>
-      <p>If you ever subscribed, the record of those payment events stays, with your account ID stripped out. We keep it for tax and accounting.</p>
+      <p>If you ever subscribed or paid a coach, the record of those payment events stays, with your account ID stripped out of it. Our copy of each event as Stripe or the App Store sent it still contains your account ID or email address. We keep it for tax and accounting.</p>
     </div>
 
     <div class="data-category">
@@ -315,7 +334,12 @@
       <p>If you started a group chat, the group itself stays so the other members keep their conversation. Your messages in it are deleted and your name is removed as its creator.</p>
     </div>
 
-    <p><strong>How long:</strong> we do not currently put an expiry date on these five. They stay in our database, without your identity attached, until we delete them. If you want the first and the last of them removed as well, email us at <a href="mailto:support@fizeekapp.com">support@fizeekapp.com</a> and we will do it by hand. The three money records (purchases, referrals and payments) we have to keep for tax and accounting.</p>
+    <div class="data-category">
+      <div class="data-category-title">Custom exercises you made</div>
+      <p>A custom exercise you created is switched off, not deleted, so that lifts other people logged with it still have a name. It keeps its name and the account ID that made it.</p>
+    </div>
+
+    <p><strong>How long:</strong> we do not currently put an expiry date on these six. They stay in our database, without your identity attached except where noted above, until we delete them. If you want your feedback and a group chat you created removed as well, email us at <a href="mailto:support@fizeekapp.com">support@fizeekapp.com</a> and we will do it by hand. The three money records (purchases, referrals and payments) we have to keep for tax and accounting.</p>
     <p>Separately, deleted data can sit in our database provider's encrypted backups for a short time before those backups are overwritten. We cannot reach into a backup to remove one account from it.</p>
   </div>
 
@@ -329,7 +353,7 @@
     <div class="service-list">
       <div class="service-item">
         <span class="service-name">Sentry</span>
-        <span class="service-purpose">Crash reports. Holds your account ID and email address, your device model and operating system, and the details of any crash you hit, which can include workout values such as the weight and reps of the set you were saving.</span>
+        <span class="service-purpose">Crash reports. Holds your account ID (reports sent before October 2026 may also hold your email address), your device model and operating system, and the details of any crash you hit, which can include workout values such as the weight and reps of the set you were saving.</span>
       </div>
       <div class="service-item">
         <span class="service-name">PostHog</span>
