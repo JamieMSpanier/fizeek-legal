@@ -146,3 +146,37 @@ Listed: only sentences that are new or worded differently since `4bf8cc3` and th
 - Your coach's Stripe account keeps the record of the payments you made, with the email address you paid with, as any payment processor does.
 - If you are a coach, your own Stripe account keeps your clients' payment records.
 
+
+## Batch AA (2026-10-30): changed for the owner's and the lawyer's review
+
+What account deletion does to conversations and to a deleted coach's client, reworded to the
+rulings of 2026-10-30: deleting any account removes every one-to-one conversation it is part of,
+for both people; a client keeps everything else that was part of their coaching when the coach
+deletes their account; the billing record with that coach is deleted. App migration 713, not yet
+applied. Only these sentences changed.
+
+**Privacy Policy, Section 06**
+- Was: If your coach deletes their account, your own records stay: your workouts and routines, your check-ins and your answers, the photos and videos you sent, and the meals and foods you ticked off.
+- Now: If your coach deletes their account, you keep your own records and everything that was part of your coaching: your workouts and routines, the meals and foods you ticked off, your check-ins and your answers with your coach's replies and the videos on them, your check-in forms, your training program, meal plan, cardio and supplement plans, the notes your coach shared with you, your calendar, the record of changes to your plans, your calls and your scores.
+- Was: What your coach made for you is deleted with their account: your meal plan, your cardio and supplement plans, their notes and the videos they sent, and your billing details with them.
+- Now: Two things are deleted with their account: your one-to-one conversation with your coach, for both of you, including your own messages and everything sent in it, and your billing record with that coach.
+
+**Privacy Policy, Section 08**
+- Was: This includes your profile information, workout data, posts, comments, and messages (including messages you sent to other users, which are removed from their conversations) as well as the photos and images you uploaded, which are deleted from our storage (the photo of a group chat stays with the group).
+- Now: This includes your profile information, workout data, posts, comments, and messages (every one-to-one conversation you are part of is deleted for both people, with every message either of you sent in it and everything sent with them, and the messages you sent in group chats are removed from those chats) as well as the photos and images you uploaded, which are deleted from our storage (the photo of a group chat stays with the group).
+- Was: Your coaching data stays until you delete your account; what your coach made for you is deleted if they delete theirs (Section 06).
+- Now: Your coaching data stays until you delete your account, and stays if your coach deletes theirs, except your one-to-one conversation with them and your billing record with them (Section 06).
+
+**Terms & Conditions, Section 08**
+- Was: If your coach deletes their account, your own records stay and what they made for you is deleted, as our Privacy Policy describes.
+- Now: If your coach deletes their account, you keep everything that was part of your coaching except your one-to-one conversation with them, which is deleted for both of you, and your billing record with them, as our Privacy Policy describes.
+
+**Delete Your Account, Section 05 (Your messages)**
+- Was: Your direct messages and your group chat messages, including messages you sent to other people. Those are removed from the other person's conversation too. If your message was the last one in a conversation, its preview disappears from everyone's list of conversations as well.
+- Now: Every one-to-one conversation you are part of, for both people: every message you or the other person sent in it, and everything sent with them, such as photos, videos, polls and workout invitations. Your group chat messages are removed from the group. If your message was the last one in a group chat, its preview disappears from everyone's list of conversations as well.
+
+**Delete Your Account, Section 06 (If you are a coach)**
+- Was: Each of your coaching relationships ends. What you made for each client is deleted: their plans, your notes, their schedule changes, the videos you sent, the calls you set up and the billing records. Your check-in forms and your own custom check-in questions are deleted too.
+- Was: Some of it stays with your clients, because it is their record: their check-ins and their answers, as they sent them; their phases, under the names you gave them; a frozen copy of the last routine and the last meal plan you gave them.
+- Now: Each of your coaching relationships ends. Everything that was part of each client's coaching stays with that client, because it is their record: their check-ins and their answers, as they sent them, with your replies and the videos on them, and the check-in forms they were sent; their training program, meal plan, cardio and supplement plans, and a frozen copy of the last routine and the last meal plan you gave them; their phases, under the names you gave them; the notes you shared with them, their calendar, the record of changes to their plans, the calls you set up with them, and their scores.
+- Now: Your one-to-one conversation with each person, a client or anyone else, is deleted for both of you, including their messages and everything sent in it. What is only yours is deleted: your private notes about clients, your settings, the check-in forms and videos no client was given, and the billing records with your clients.
