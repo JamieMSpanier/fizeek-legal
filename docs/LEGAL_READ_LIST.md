@@ -180,3 +180,24 @@ applied. Only these sentences changed.
 - Was: Some of it stays with your clients, because it is their record: their check-ins and their answers, as they sent them; their phases, under the names you gave them; a frozen copy of the last routine and the last meal plan you gave them.
 - Now: Each of your coaching relationships ends. Everything that was part of each client's coaching stays with that client, because it is their record: their check-ins and their answers, as they sent them, with your replies and the videos on them, and the check-in forms they were sent; their training program, meal plan, cardio and supplement plans, and a frozen copy of the last routine and the last meal plan you gave them; their phases, under the names you gave them; the notes you shared with them, their calendar, the record of changes to their plans, the calls you set up with them, and their scores.
 - Now: Your one-to-one conversation with each person, a client or anyone else, is deleted for both of you, including their messages and everything sent in it. What is only yours is deleted: your private notes about clients, your settings, the check-in forms and videos no client was given, and the billing records with your clients.
+
+## Batch AB (2026-10-30): changed for the owner's and the lawyer's review
+
+What a coach can see from before coaching, reworded to ruling R1 of 2026-10-30: a coach sees the
+client's full logged history from before coaching too, and all progress photos, with two limits:
+a body weight dated before October 30, 2026 is never shown to a coach, and a weight read from Apple
+Health never is. App migration 715, not yet applied. Only these sentences changed. The client is
+also told on the screen where they accept an invite: "Your coach will see your workout history and
+all your progress photos."
+
+**Privacy Policy, Section 06**
+- Was: While you are coached, your coach can see your workouts and every set you log, your training history, trends and personal records, your body weight (the weights you type into Fizeek, never the ones read from Apple Health) and other metrics you track, your nutrition plan and how closely you followed it, your progress photos, your check-in answers (including any health answers), the photos and videos on your check-ins, any lab results either of you uploads, and your email address.
+- Now: While you are coached, your coach can see your workouts and every set you log, your training history (including what you logged before your coaching began), trends and personal records, your body weight (the weights you type into Fizeek dated October 30, 2026 or later, never the ones read from Apple Health) and other metrics you track, your nutrition plan and how closely you followed it, all your progress photos, your check-in answers (including any health answers), the photos and videos on your check-ins, any lab results either of you uploads, and your email address.
+
+**Terms & Conditions, Section 08**
+- Was: While you are coached, your coach can see the information listed in our Privacy Policy, including your workouts, nutrition, check-ins, progress photos and, while your coaching is active, your email address.
+- Now: While you are coached, your coach can see the information listed in our Privacy Policy, including your workouts and training history from before your coaching began, nutrition, check-ins, all your progress photos and, while your coaching is active, your email address.
+
+**Not changed, for the owner's decision: Privacy Policy, Section 04**
+- Still reads: Bodyweight read from Apple Health before this change was stored without a mark saying where it came from, so a coach can still see those earlier readings.
+- Under R1 and migration 715 this is no longer true: no weight dated before October 30, 2026 is shown to a coach, so those earlier Health readings are not shown either. The brief named only Section 06 and Terms Section 08, so this sentence was left as it is.
