@@ -201,3 +201,25 @@ all your progress photos."
 **Not changed, for the owner's decision: Privacy Policy, Section 04**
 - Still reads: Bodyweight read from Apple Health before this change was stored without a mark saying where it came from, so a coach can still see those earlier readings.
 - Under R1 and migration 715 this is no longer true: no weight dated before October 30, 2026 is shown to a coach, so those earlier Health readings are not shown either. The brief named only Section 06 and Terms Section 08, so this sentence was left as it is.
+
+## Agreeing again after a change (batch AC, items 4 to 6)
+
+Every agreement is now recorded on the server: which version of the Terms and the Privacy Policy
+each person ticked, when, and from which app or the website, and the coach-sharing sentence with
+the coaching link it was given for (app migration 721, not applied yet).
+
+**When a page changes materially, the owner bumps its version, one line in the Supabase SQL editor:**
+
+```sql
+UPDATE public.legal_documents SET current_version = '2026-11-15', updated_at = now() WHERE doc = 'terms';
+```
+
+Use `doc = 'privacy'` for the Privacy Policy and `doc = 'coach_health_share'` for the
+coach-sharing sentence. Use the date the new page goes live as the version. From then on every
+person whose latest agreement is older sees the updated pages and the same two boxes on their next
+app open or website sign-in, and cannot continue until both are ticked. Bump only after the new
+page is published, so nobody agrees to a page they cannot read yet.
+
+The versions 721 starts with are the ones the app ships today: Terms `2026-08-04`, Privacy Policy
+`2026-09-25`, coach-sharing sentence `2026-10-31`. The rewritten pages from batch AC, item 7 are a
+bump of both, made when they are published.
