@@ -223,3 +223,90 @@ page is published, so nobody agrees to a page they cannot read yet.
 The versions 721 starts with are the ones the app ships today: Terms `2026-08-04`, Privacy Policy
 `2026-09-25`, coach-sharing sentence `2026-10-31`. The rewritten pages from batch AC, item 7 are a
 bump of both, made when they are published.
+
+## The rewrite (batch AC, item 7): every page, section by section
+
+All four pages were rewritten from scratch to match what the app and the website do after batch AC
+(including changes not yet applied or released). No em dash, and no comment or internal note in any
+page's source. Each page still carries the draft banner and an effective date to set on publication.
+
+### Privacy Policy (`privacy-policy.html`)
+
+1. Who This Policy Covers: members, clients and coaches.
+2. What We Collect: account, training and body, Apple Health (iPhone), social, coaching for clients
+   and for coaches, payments, agreements (which version was agreed, when, where), app and device.
+3. How We Use It: run Fizeek, run coaching, safety, fixes, contact; no sale, no brokers, no ads.
+4. Apple Health and Apple Watch: body weight only; "Bodyweight read from Apple Health is never shown
+   to a coach."; turn off in the Health app.
+5. Coaching, What Your Coach Sees: the sharing box; history from before coaching, typed and check-in
+   body weights, nutrition, all progress photos, answers, check-in media, lab results, email.
+6. When Coaching Ends: future charges stop at once, access to the end of the paid period; the former
+   coach sees a frozen view up to that day, including plans and profile settings.
+7. Deleting an Account That Is Part of Coaching: a client's deletion; a coach's deletion and what the
+   client keeps, lab results included; the conversation and billing record deleted.
+8. Messages: one-to-one conversations deleted for both people when either deletes.
+9. Who We Share It With: each provider and what it receives.
+10. AI Features: what Anthropic receives and does not.
+11. How Long We Keep Data: what stays after deletion; payment records kept for tax and legal reasons;
+    backups; providers' own copies.
+12. Your Rights and Your Data: export (photos, videos and lab files as 7-day download links), correct,
+    delete, object; CCPA; consumer health data laws; not offered in the EEA or UK.
+13. Security: including that a breach affecting health data is told as the law requires.
+14. Where Data Is Stored: the United States.
+15. Children: 16, or 18 in India.
+16. Changes to This Policy: 30 days' notice; agree again after a material change.
+17. Contact Us.
+
+### Terms & Conditions (`terms-and-conditions.html`)
+
+1. Who These Terms Cover, and that they are agreed by ticking the boxes at sign-up.
+2. Eligibility: unchanged (only "the App" now reads "Fizeek").
+3. Your Account. 4. Acceptable Use. (shortened, same rules)
+5. Your Content and How We Use It: the license is only to run Fizeek; no ads use without permission.
+6. Content Moderation. 7. Copyright. 8. Fizeek Pro. (same substance, shorter)
+9. Coaching: Fizeek is not the coach or a party; not medical advice; the sharing box.
+10. Paying a Coach, Ending Coaching and Refunds: either side ending stops future charges, access to
+    the end of the paid period, packages run to their end, unpaid ends at once; deletion ends at once
+    with no refund; Fizeek gives no coaching refunds.
+11. If You Are a Coach: the ten coach terms (not a party; notices and consents; licenses; refer a
+    medical condition to a doctor; fair refund policy; own taxes and disputes; no endorsement claims;
+    not a HIPAA tool; cover Fizeek including injury claims; client information used only to coach).
+12. Coach Payments and Stripe: the Stripe Connected Account Agreement, linked, agreed by accepting
+    these Terms (Stripe also shows it at payment setup; Fizeek's own screens do not); coach plans.
+13. Plans and Content After Coaching: a client keeps using plans for personal use, also after the
+    coach deletes their account.
+14. Fizeek's Property. 15. Fitness Disclaimer. 16. Disclaimer of Warranties. 17. Limitation of
+    Liability. 18. Indemnification (coaching, including injury claims). (same substance)
+19. Deleting or Closing an Account: payments and coaching end at once, no refund.
+20. Changes to These Terms: 30 days' notice; agree again after a material change.
+21. Governing Law, 22. Dispute Resolution & Arbitration, 23. Severability: unchanged text (section
+    numbers and "the App" updated).
+24. Contact Us.
+
+### Consumer Health Data Privacy Policy (`consumer-health-data-privacy-policy.html`, new)
+
+1. The Health Data We Collect: seven categories.
+2. Where It Comes From: the person, the coach, Apple Health (body weight only).
+3. Why We Use It: features, coaching, keeping Fizeek working; no ads, no sale.
+4. Who Receives It: the coach (after the box; never Apple Health weight; a former coach's frozen view)
+   and each provider with what it receives.
+5. Your Rights: know, access (7-day links for files), delete, withdraw, know who receives it; 30-day
+   reply; an appeal by email answered within 45 days; the state attorney general.
+6. Withdrawing Consent: leave the coach, turn off Apple Health, delete the account.
+7. How We Protect It: including breach notice.
+8. Changes and Contact: 30 days' notice.
+
+**Where it must be linked:** the website footer (added), the app's Settings, Legal section (added;
+ships with the next app update), and the App Store listing (an owner step in App Store Connect).
+
+### Delete Your Account (`delete-account.html`)
+
+1. In the App. 2. On the Coaching Website. 3. By Email.
+4. Payments Stop First: every subscription cancelled; coaching ends at once with no refund.
+5. What Is Deleted: lab results named; conversations deleted for both people.
+6. If You Are a Coach: what each client keeps, lab results included.
+7. What We Keep: payment records kept for tax and legal reasons.
+8. Copies Held by Other Companies. 9. Uninstalling Is Not Deleting. 10. Questions.
+
+**For the lawyer:** the appeal process and its 45 days (CHDPP 5), the arbitration and governing-law
+text carried over, the HIPAA sentence, the Stripe sentence, and whether "Nevada" should be named.

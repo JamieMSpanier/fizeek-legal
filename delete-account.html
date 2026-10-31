@@ -82,41 +82,6 @@
     margin-bottom: 0;
   }
 
-  .steps {
-    counter-reset: step;
-    list-style: none;
-    margin: 16px 0 0;
-  }
-
-  .steps li {
-    counter-increment: step;
-    position: relative;
-    padding: 0 0 14px 40px;
-    color: #d4d4d4;
-    font-size: 0.9375rem;
-  }
-
-  .steps li:last-child {
-    padding-bottom: 0;
-  }
-
-  .steps li::before {
-    content: counter(step);
-    position: absolute;
-    left: 0;
-    top: 2px;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background: rgba(94, 234, 212, 0.1);
-    border: 1px solid rgba(94, 234, 212, 0.3);
-    color: #5eead4;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: center;
-  }
-
   .data-category {
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(255,255,255,0.06);
@@ -210,218 +175,96 @@
 
   a { color: #5eead4; }
   strong { color: #ffffff; font-weight: 600; }
-  /* Batch U, item 12: the draft banner, the terms page's own .warning-box. */
-  .warning-box {
-    background: rgba(239, 68, 68, 0.05);
-    border-left: 3px solid #ef4444;
-    padding: 16px 20px;
-    border-radius: 0 10px 10px 0;
-    margin: 16px 0;
-  }
-  .warning-box p {
-    color: #fca5a5;
-    font-size: 0.9375rem;
-    margin-bottom: 0;
-  }
 </style>
 </head>
 <body>
 
 <div class="page-header">
   <h1>Delete Your Account</h1>
-  <p class="effective-date">Last updated: October 29, 2026</p>
+  <p class="effective-date">Effective Date: [set on publication] (DRAFT)</p>
 </div>
 
 <div class="container">
 
-  <!-- PROVISIONAL DRAFT, batch V, items 12 and 13 (2026-10-29): rewritten for coaching to match
-       the deletion code (delete_user_data after migrations 700 and 704, and the delete-user-account
-       function). For Jamie and a lawyer; NOT PUBLISHED. -->
   <div class="warning-box">
-    <p><strong>Draft for review, not in force.</strong> This version has not been reviewed by a lawyer.</p>
+    <p><strong>Draft for review, not in force.</strong></p>
   </div>
 
   <p class="intro">
-    This page explains how to delete your <strong>Fizeek</strong> account and what happens to your data when you do. Fizeek is published by <strong>Fizeek LLC</strong>. You can delete your account in the app, on the Fizeek coaching website, or by emailing us.
+    You can delete your Fizeek account and its data at any time, from the app, from the coaching website, or by email. This page says how, what is deleted, and what is kept.
   </p>
 
-  <!-- 1 -->
   <div class="section">
     <div class="section-number">01</div>
-    <h2>Delete your account in the app</h2>
-    <p>Anyone can delete their account from the app. It takes effect immediately.</p>
-    <ol class="steps">
-      <li>Open Fizeek and tap <strong>Profile</strong> in the bottom bar.</li>
-      <li>Tap the <strong>pencil</strong> icon in the top right to open Edit Profile.</li>
-      <li>Scroll to the bottom, to the section headed <strong>Account</strong>.</li>
-      <li>Tap <strong>Delete Account</strong>, the last row, shown in red.</li>
-      <li>Read the warning and tap <strong>Continue</strong>.</li>
-      <li>Type <strong>DELETE</strong> in the box to confirm, then tap <strong>Delete Forever</strong>.</li>
-    </ol>
-    <div class="highlight-box">
-      <p>Your account and your data are deleted straight away. There is no waiting period and no way to undo it. If you want a copy of anything, save it before you start.</p>
-    </div>
+    <h2>In the App</h2>
+    <p>Open Fizeek and tap <strong>Profile</strong>. Tap the pencil icon in the top right to open Edit Profile, scroll to <strong>Account</strong>, and tap <strong>Delete Account</strong>. Read the warning, tap <strong>Continue</strong>, type DELETE, then tap <strong>Delete Forever</strong>.</p>
+    <p>Your account is deleted straight away. There is no waiting period and no way to undo it. If you want a copy of anything, request your data first.</p>
   </div>
 
-  <!-- 2 -->
   <div class="section">
     <div class="section-number">02</div>
-    <h2>Delete your account on the coaching website</h2>
-    <p><strong>If you are a coach,</strong> sign in to the coaching website, open <strong>Settings</strong> and find the <strong>Account</strong> card. Tap <strong>Delete Account</strong> and confirm with <strong>Delete Forever</strong>. Settings and its Account card stay open to you even when your account is limited to Billing because a payment did not go through.</p>
-    <p><strong>If you are a client,</strong> sign in to the coaching website and open the page where you pay your coach. Its <strong>Account</strong> card has <strong>Delete Account</strong>; confirm with <strong>Delete Forever</strong>. If you do not have a coach, delete your account from the app instead.</p>
+    <h2>On the Coaching Website</h2>
+    <p><strong>Coaches:</strong> sign in, open <strong>Settings</strong>, and in the Account card tap <strong>Delete Account</strong>, then <strong>Delete Forever</strong>. Settings stays open to you even when your account is limited to Billing.</p>
+    <p><strong>Clients:</strong> sign in and open the page where you pay your coach. In its Account card tap <strong>Delete Account</strong>, then <strong>Delete Forever</strong>. If you do not have a coach, delete your account in the app.</p>
     <p>Deleting on the website does exactly what deleting in the app does.</p>
   </div>
 
-  <!-- 3 -->
   <div class="section">
     <div class="section-number">03</div>
-    <h2>Delete your account by email</h2>
-    <p>If you cannot get into the app or the website, email us at <a href="mailto:support@fizeekapp.com">support@fizeekapp.com</a> and ask us to delete your account.</p>
-    <p>Please send the email <strong>from the email address on the account</strong>. That is how we confirm the request is really from you. If you send it from a different address we will have to ask you for something else that proves the account is yours, which slows things down.</p>
-    <p><strong>We will reply within 30 days.</strong> That is our commitment on data requests, including deletion requests, and it matches Section 13 of our Privacy Policy. Once we delete the account, the effect is exactly the same as deleting it yourself.</p>
+    <h2>By Email</h2>
+    <p>If you cannot get into the app or the website, email support@fizeekapp.com from the email address on the account and ask us to delete it. From another address we will need other proof that the account is yours. We reply within 30 days, and the result is the same as deleting it yourself.</p>
   </div>
 
-  <!-- 4 -->
   <div class="section">
     <div class="section-number">04</div>
-    <h2>Payments stop first</h2>
-    <p>Before anything is deleted, we cancel at Stripe every subscription the account has: what you pay a coach, your own Fizeek coach plan if you are a coach, and what each of your clients pays you. If a cancellation fails, nothing is deleted, and you can try again.</p>
+    <h2>Payments Stop First</h2>
+    <p>Before anything is deleted, we cancel every subscription the account has at Stripe: what you pay a coach, your coach plan if you are a coach, and what your clients pay you. Coaching ends at once, with no refund. If a cancellation fails, nothing is deleted and you can try again. Fizeek Pro bought through Apple or Google is managed in your app store subscriptions.</p>
   </div>
 
-  <!-- 5 -->
   <div class="section">
     <div class="section-number">05</div>
-    <h2>What gets deleted</h2>
-    <p>Deleting your account removes all of the following from our database and our file storage, along with your data exports, your notifications and your search history.</p>
-
-    <div class="data-category">
-      <div class="data-category-title">Your account and profile</div>
-      <p>Your login, your email address, your username, your name, your date of birth, your bio, your profile photo, your banner image, your push notification token, and any answers you gave during sign up.</p>
-    </div>
-
-    <div class="data-category">
-      <div class="data-category-title">Your training data</div>
-      <p>Every workout and template you built, your splits, your full workout history, every set with its weight and reps, your cardio entries, your personal records, your progress trends, your body weight entries, your goals, your achievements, your setup cues, and any request you sent us to set up a split for you.</p>
-    </div>
-
-    <div class="data-category">
-      <div class="data-category-title">Your coaching, if you are a client</div>
-      <p>Your coaching links, your check-ins and your answers to them, the videos and photos you sent with them, and everything your coach made for you: your plans, notes, schedules, supplements and lab work.</p>
-    </div>
-
-    <div class="data-category">
-      <div class="data-category-title">Your social activity</div>
-      <p>Your posts, your comments, your likes, who you follow and who follows you, your favorite friends, and your blocked list.</p>
-    </div>
-
-    <div class="data-category">
-      <div class="data-category-title">Your messages</div>
-      <p>Every one-to-one conversation you are part of, for both people: every message you or the other person sent in it, and everything sent with them, such as photos, videos, polls and workout invitations. Your group chat messages are removed from the group. If your message was the last one in a group chat, its preview disappears from everyone's list of conversations as well.</p>
-    </div>
-
-    <div class="data-category">
-      <div class="data-category-title">Your photos and files</div>
-      <p>Every image you uploaded is deleted from our storage, not just unlinked from your account. That covers post photos, workout photos, progress photos, your profile picture, your profile banner, and photos you sent in messages. The photo of a group chat stays with the group.</p>
-    </div>
+    <h2>What Is Deleted</h2>
+    <p><strong>Your account and profile:</strong> your login, email address, username, name, date of birth, bio, profile photo, banner and notification token.</p>
+    <p><strong>Your training:</strong> every workout and template, your routines, your workout history and every set, cardio, personal records, trends, body weight, goals and achievements.</p>
+    <p><strong>Your coaching, if you are a client:</strong> your coaching links, check-ins and answers with their photos and videos, your lab results, and everything your coach made for you. Your former coach no longer sees any of it.</p>
+    <p><strong>Your social activity:</strong> posts, comments, likes, follows and your blocked list.</p>
+    <p><strong>Your messages:</strong> every one-to-one conversation you are part of is deleted for both people, with every message either of you sent and everything sent with them. Your messages in group chats are removed from the group.</p>
+    <p><strong>Your photos and files:</strong> every image you uploaded is deleted from our storage. A group chat's photo stays with the group.</p>
+    <p><strong>Also:</strong> your data exports, your notifications and your search history.</p>
   </div>
 
-  <!-- 6 -->
   <div class="section">
     <div class="section-number">06</div>
-    <h2>If you are a coach</h2>
-    <p>Each of your coaching relationships ends. Everything that was part of each client's coaching stays with that client, because it is their record:</p>
-    <ul class="steps">
-      <li>their check-ins and their answers, as they sent them, with your replies and the videos on them, and the check-in forms they were sent;</li>
-      <li>their training program, meal plan, cardio and supplement plans, and a frozen copy of the last routine and the last meal plan you gave them;</li>
-      <li>their phases, under the names you gave them;</li>
-      <li>the notes you shared with them, their calendar, the record of changes to their plans, the calls you set up with them, and their scores.</li>
-    </ul>
-    <p>Your one-to-one conversation with each person, a client or anyone else, is deleted for both of you, including their messages and everything sent in it. What is only yours is deleted: your private notes about clients, your settings, the check-in forms and videos no client was given, and the billing records with your clients.</p>
-    <p>None of that keeps your name or account attached.</p>
+    <h2>If You Are a Coach</h2>
+    <p>Each of your coaching relationships ends at once. Each client keeps everything that was part of their coaching, because it is their record: their check-ins and answers with your replies and the videos on them, their check-in forms, their lab results, their training program, meal plan, cardio and supplement plans, a copy of the routine and meal plan as you last left them, their phases, the notes you shared with them, their calendar, the record of changes to their plans, their calls and their scores. None of it keeps your name or account attached.</p>
+    <p>Your one-to-one conversation with each person is deleted for both of you. What was only yours is deleted: your private notes about clients, your settings, the forms and videos no client was given, and your billing records with your clients.</p>
   </div>
 
-  <!-- 7 -->
   <div class="section">
     <div class="section-number">07</div>
-    <h2>What we keep, and for how long</h2>
-    <p>Six kinds of record stay in our database after your account is gone. From the first five <strong>your name, your email address and your account ID are removed</strong>, with the one exception noted under subscription records, so the record is no longer linked to you or to any person. We keep them because deleting them would break something for someone else, or because we need them for our own records.</p>
-
-    <div class="data-category">
-      <div class="data-category-title">Feedback you sent us</div>
-      <p>If you used Send Feedback in the app, the text of that feedback stays, with your account ID stripped out. We keep it so we do not lose a bug report or a suggestion.</p>
-    </div>
-
-    <div class="data-category">
-      <div class="data-category-title">Subscription and purchase records</div>
-      <p>If you ever subscribed or paid a coach, the record of those payment events stays, with your account ID stripped out of it. Our copy of each event as Stripe or the App Store sent it still contains your account ID or email address. We keep it for tax and accounting.</p>
-    </div>
-
-    <div class="data-category">
-      <div class="data-category-title">Referral records</div>
-      <p>If you used an ambassador code, or your own code was used by someone else, that referral record stays, with the account IDs stripped out.</p>
-    </div>
-
-    <div class="data-category">
-      <div class="data-category-title">Payments we made to you</div>
-      <p>If you were an ambassador and we paid you, the record of that payment stays, with your account ID stripped out. A row here means money actually changed hands, so we keep it for tax and accounting in the same way a business keeps any other payment record.</p>
-    </div>
-
-    <div class="data-category">
-      <div class="data-category-title">Group chats you created</div>
-      <p>If you started a group chat, the group itself stays so the other members keep their conversation. Your messages in it are deleted and your name is removed as its creator.</p>
-    </div>
-
-    <div class="data-category">
-      <div class="data-category-title">Custom exercises you made</div>
-      <p>A custom exercise you created is switched off, not deleted, so that lifts other people logged with it still have a name. It keeps its name and the account ID that made it.</p>
-    </div>
-
-    <p><strong>How long:</strong> we do not currently put an expiry date on these six. They stay in our database, without your identity attached except where noted above, until we delete them. If you want your feedback and a group chat you created removed as well, email us at <a href="mailto:support@fizeekapp.com">support@fizeekapp.com</a> and we will do it by hand. The three money records (purchases, referrals and payments) we have to keep for tax and accounting.</p>
-    <p>Separately, deleted data can sit in our database provider's encrypted backups for a short time before those backups are overwritten. We cannot reach into a backup to remove one account from it.</p>
+    <h2>What We Keep</h2>
+    <p>A few records stay, with your name, email address and account ID removed: feedback you sent us, any group chat you created (so its members keep their conversation), and any custom exercise you made (switched off, so lifts other people logged with it keep a name).</p>
+    <p><strong>Payment records</strong> are kept for tax and legal reasons: subscription and purchase events, coaching payments, ambassador referrals and payments we made. Our copies of the payment messages Stripe and the app stores send us still contain your account ID or email address.</p>
+    <p>Deleted data can remain in our database provider's encrypted backups for a short time before they are overwritten. Email support@fizeekapp.com if you want your feedback or a group chat you created removed too.</p>
   </div>
 
-  <!-- 8 -->
   <div class="section">
     <div class="section-number">08</div>
-    <h2>Copies held by other companies</h2>
-    <p>We want to be straight with you about this, because it is the part most deletion pages leave out.</p>
-    <p>Some of the companies that help us run Fizeek keep their own copy of a small amount of data about you. <strong>Deleting your account does not reach those copies.</strong> The deletion clears our database and our storage and cancels your subscriptions, and it does not send a delete instruction to these companies.</p>
-
-    <div class="service-list">
-      <div class="service-item">
-        <span class="service-name">Sentry</span>
-        <span class="service-purpose">Crash reports. Holds your account ID (reports sent before October 2026 may also hold your email address), your device model and operating system, and the details of any crash you hit, which can include workout values such as the weight and reps of the set you were saving.</span>
-      </div>
-      <div class="service-item">
-        <span class="service-name">PostHog</span>
-        <span class="service-purpose">Product analytics. Holds your account ID and email address, and a small fixed set of usage events such as signing up, finishing a workout, or viewing the upgrade screen. It never holds anything you typed.</span>
-      </div>
-      <div class="service-item">
-        <span class="service-name">RevenueCat</span>
-        <span class="service-purpose">Subscription management. Holds your account ID and your purchase and subscription history, plus a note of any ambassador code you used.</span>
-      </div>
-      <div class="service-item">
-        <span class="service-name">Stripe</span>
-        <span class="service-purpose">Coaching payments. Your coach's Stripe account keeps the record of the payments you made, with the email address you paid with, as any payment processor does. If you are a coach, your own Stripe account keeps your clients' payment records. Deleting your Fizeek account cancels the subscriptions; it does not delete those records.</span>
-      </div>
-    </div>
-
-    <p>If you want the Sentry, PostHog and RevenueCat copies deleted too, email <a href="mailto:support@fizeekapp.com">support@fizeekapp.com</a> and say so. We will delete your Sentry crash reports and your PostHog events. At RevenueCat we will delete the extra labels we attach to your account, such as a note that you were given Fizeek Pro for free or that you used an ambassador code. <strong>Your purchase and subscription history at RevenueCat we keep</strong>, for tax and accounting, in the same way as the money records in section 07.</p>
-    <p>We are working on making this automatic, so that deleting your account clears these copies as well. Until it is, this page tells you where you stand.</p>
+    <h2>Copies Held by Other Companies</h2>
+    <p>Some services that help run Fizeek keep their own copy of a small amount of data, and deleting your account does not reach those copies: <strong>Sentry</strong> (crash reports, which can include workout values), <strong>PostHog</strong> (a small set of usage events with your account ID and email), <strong>RevenueCat</strong> (your purchase and subscription history) and <strong>Stripe</strong> (the record of coaching payments, kept by your coach's Stripe account, or by yours if you are a coach).</p>
+    <p>Email support@fizeekapp.com to have your Sentry crash reports and PostHog events deleted too. Your purchase history at RevenueCat is kept for tax and legal reasons.</p>
   </div>
 
-  <!-- 9 -->
   <div class="section">
     <div class="section-number">09</div>
-    <h2>Deleting the app is not the same thing</h2>
-    <p>Uninstalling Fizeek from your phone does not delete your account. Your data stays on our servers and you can sign back in. To remove your data you have to use one of the routes on this page.</p>
+    <h2>Uninstalling Is Not Deleting</h2>
+    <p>Removing Fizeek from your phone does not delete your account. Your data stays and you can sign back in. Use one of the routes above to delete it.</p>
   </div>
 
-  <!-- 10 -->
   <div class="section">
     <div class="section-number">10</div>
     <h2>Questions</h2>
-    <p>Our <a href="privacy-policy.html">Privacy Policy</a> explains what we collect and why. If anything on this page is unclear, or you are not sure whether your account was deleted, get in touch and we will check.</p>
+    <p>Our <a href="privacy-policy.html">Privacy Policy</a> explains what we collect and why. If anything here is unclear, or you are not sure your account was deleted, get in touch.</p>
     <div class="contact-box">
       <p style="margin-bottom: 6px; color: #a3a3a3; font-size: 0.875rem;">Fizeek LLC</p>
       <a href="mailto:support@fizeekapp.com">support@fizeekapp.com</a>
