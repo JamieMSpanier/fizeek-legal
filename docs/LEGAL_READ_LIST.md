@@ -235,6 +235,15 @@ Account page have no version of their own and print the Privacy Policy's (batch 
 nobody is asked to agree to them. `scripts/checkLegalVersions.mjs` in fizeek-sandbox fails when the
 app's constants, 721's seed and these four pages disagree.
 
+**Where the pages live (batch AF, F9).** The four pages are `pages/terms.html`, `pages/privacy.html`,
+`pages/health-data.html` and `pages/delete-account.html`, linking each other by route. The coach
+site serves them at `https://fizeekapp.com/terms`, `/privacy`, `/health-data` and `/delete-account`,
+copied byte for byte (`node scripts/syncLegalPages.mjs --write` in fizeek-landing; its check is in
+the site's `npm run check`). The old files at this repo's root (`terms-and-conditions.html`,
+`privacy-policy.html`, `consumer-health-data-privacy-policy.html`, `delete-account.html`) only
+forward to those addresses. So "publish the pages" is now: run the site's sync, deploy the site,
+then publish this repo so the old addresses forward.
+
 ## The rewrite (batch AC, item 7): every page, section by section
 
 All four pages were rewritten from scratch to match what the app and the website do after batch AC
