@@ -220,9 +220,10 @@ person whose latest agreement is older sees the updated pages and the same two b
 app open or website sign-in, and cannot continue until both are ticked. Bump only after the new
 page is published, so nobody agrees to a page they cannot read yet.
 
-The versions 721 starts with are the ones the app ships today: Terms `2026-08-04`, Privacy Policy
-`2026-09-25`, coach-sharing sentence `2026-10-31`. The rewritten pages from batch AC, item 7 are a
-bump of both, made when they are published.
+The versions 721 starts with are the ones the app ships: Terms `2026-11-02`, Privacy Policy
+`2026-11-02` (Jamie's ruling 11/2, batch AE gaps 2: the rewritten pages from batch AC, item 7 are
+that version), coach-sharing sentence `2026-10-31`. Every account stamped before carries `2026-08-04`
+/ `2026-09-25`, so once 721 is applied each one is asked to agree again. Publish these pages first.
 
 **The page's own date comes from the same version (batch AE gaps, G4).** The Terms and Privacy
 pages no longer carry a date typed by hand: each prints "Effective Date" from `legal-versions.js`,
@@ -230,13 +231,15 @@ which the app writes from its `TERMS_VERSION` and `PRIVACY_VERSION`
 (`node scripts/legal/writeLegalVersions.mjs` in fizeek-sandbox; `--check` compares without
 writing). So a bump is: set the app's constant, run that script, publish the pages, then the one
 SQL line above with the same date. The Consumer Health Data Privacy Policy and the Delete Your
-Account page have no version yet and keep "[set on publication]".
+Account page have no version of their own and print the Privacy Policy's (batch AE gaps 2, L2);
+nobody is asked to agree to them. `scripts/checkLegalVersions.mjs` in fizeek-sandbox fails when the
+app's constants, 721's seed and these four pages disagree.
 
 ## The rewrite (batch AC, item 7): every page, section by section
 
 All four pages were rewritten from scratch to match what the app and the website do after batch AC
 (including changes not yet applied or released). No em dash, and no comment or internal note in any
-page's source. Each page still carries the draft banner and an effective date to set on publication.
+page's source. Each page still carries the draft banner; its effective date is printed from the version (above).
 
 ### Privacy Policy (`privacy-policy.html`)
 
