@@ -224,6 +224,14 @@ The versions 721 starts with are the ones the app ships today: Terms `2026-08-04
 `2026-09-25`, coach-sharing sentence `2026-10-31`. The rewritten pages from batch AC, item 7 are a
 bump of both, made when they are published.
 
+**The page's own date comes from the same version (batch AE gaps, G4).** The Terms and Privacy
+pages no longer carry a date typed by hand: each prints "Effective Date" from `legal-versions.js`,
+which the app writes from its `TERMS_VERSION` and `PRIVACY_VERSION`
+(`node scripts/legal/writeLegalVersions.mjs` in fizeek-sandbox; `--check` compares without
+writing). So a bump is: set the app's constant, run that script, publish the pages, then the one
+SQL line above with the same date. The Consumer Health Data Privacy Policy and the Delete Your
+Account page have no version yet and keep "[set on publication]".
+
 ## The rewrite (batch AC, item 7): every page, section by section
 
 All four pages were rewritten from scratch to match what the app and the website do after batch AC
