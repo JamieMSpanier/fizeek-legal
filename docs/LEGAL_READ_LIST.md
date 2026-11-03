@@ -330,3 +330,118 @@ ships with the next app update), and the App Store listing (an owner step in App
 
 **For the lawyer:** the appeal process and its 45 days (CHDPP 5), the arbitration and governing-law
 text carried over, the HIPAA sentence, the Stripe sentence, and whether "Nevada" should be named.
+
+## Batch AH (2026-11-03): the three reviews merged, and the Coach Agreement
+
+🔴 **This section supersedes the batch AC section list above for the page structure.** The issues
+and why each sentence changed are in fizeek-sandbox `docs/legal/LEGAL_MASTER_2026-11-03.md`; the
+code facts are in `docs/legal/FACT_SHEET.md`. No lawyer reads this (Jamie's ruling 12, 11/3); the
+owner does. Versions stay `2026-11-02` until the owner approves the text.
+
+⚠️ **Stale line above, corrected here:** "Not changed, for the owner's decision: Privacy Policy,
+Section 04" quotes a sentence that is no longer on the page (it went in the batch AC rewrite).
+
+**One postal address, one place:** every page prints it from `<span data-legal-address></span>`,
+filled by `legal-versions.js` from fizeek-sandbox `supabase/functions/_shared/legalAddress.ts`
+`LEGAL_POSTAL_ADDRESS` (read by `scripts/legal/legalVersions.mjs`; the coach invite email prints the
+same line; a placeholder until the owner decides; ruling 10).
+
+**Placeholders the owner fills:** the postal address; `[agent's phone number, as registered]` and
+`[registration number]` (Terms 07); `[monthly price]` and `[yearly price]` (Terms 08; the app reads
+prices from the App Store and holds none); `[backup period]`, `[Sentry retention]`, `[PostHog
+retention]` (Privacy 11, Health Data 04, Delete 07); `[name]` for the India grievance contact
+(Privacy 12); `[Apple revoke ship date]` (Delete 05). Reconciled 11/3 against the code agents'
+reports (agent I's report § 11 lists every corrected sentence).
+
+### Terms & Conditions (`pages/terms.html`)
+
+Intro (iPhone and Apple Watch today, Android planned; Florida LLC; agreed by tapping a sign-up
+button below the line, and by ticking boxes for a changed version; arbitration opt-out flagged) ·
+01 Who These Terms Cover (coaches also agree to the Coach Agreement) · 02 Eligibility (16, 18 in
+India, for coaching too; the excluded countries; sanctions) · 03 Your Account (unchanged) ·
+04 Community Guidelines (new: the prohibited list, progress photos without nudity, no tolerance) ·
+05 Your Content (license ends with deletion) · 06 Reports, Blocking and Enforcement (blocking hides
+both ways; reports reviewed usually within 24 hours; suspended accounts cannot post or message) ·
+07 Copyright and the DMCA (registered agent with details, notice, counter-notice, restoration 10 to
+14 business days, repeat infringers) · 08 Fizeek Pro (price shown before buying, US price
+placeholders, auto-renewal, free trial, cancel 24 hours before, deleting the account does not cancel,
+refunds through Apple or Google, non-waivable rights) · 09 Coaching (coach is an independent
+business deciding how they use what you share; tell your coach about any condition) · 10 Paying a
+Coach (terms shown before paying; price changes at least 7 days ahead by email and in the app;
+coach refunds unused prepaid time; non-waivable rights) · 11 If You Are a Coach (now a pointer to
+the Coach Agreement) · 12 Coach Payments and Stripe (Stripe's agreement accepted in Stripe's own
+onboarding) · 13 Plans and Content After Coaching (unchanged) · 14 AI Features (new: permission
+first, no names or medical details, output can be wrong) · 15 Fitness Disclaimer, Assumption of Risk
+and Release · 16 Disclaimer of Warranties (law-allows wording) · 17 Limitation of Liability (greater
+of US$100 or 12 months' payments; carve-outs) · 18 Indemnification (narrowed for members) ·
+19 Deleting or Closing an Account (Stripe cancel first, failure deletes nothing; Pro not cancelled;
+review of a suspension) · 20 Changes (a change does not reach an earlier dispute) · 21 Apple and
+Google (new: Apple's minimum EULA terms) · 22 Governing Law (Florida; Pinellas County; Middle
+District of Florida) · 23 Dispute Resolution & Arbitration (talk first; AAA consumer and mass rules;
+fees per the AAA schedule; delegation; public injunctive relief carve-out; 30-day opt-out) ·
+24 Fizeek's Property · 25 General Terms (new: whole agreement, notices, transfer, no waiver,
+severability, survival, events outside our control, feedback, other services, beta features) ·
+26 Contact Us (privacy@ for legal, privacy, copyright; support@ for the rest; address).
+
+### Privacy Policy (`pages/privacy.html`)
+
+Intro (Android planned) · 01 Who This Policy Covers (new: your coach is a separate business) ·
+02 What We Collect (steps; calendar; reports and blocks; consent record holds the words, policy
+version, coach and time; invitee emails; Coach Agreement; Settings choices; notification token) ·
+03 How We Use It (notifications: activity vs encouragement, each switchable in Settings; no
+promotional pushes or emails without permission; no targeted ads) · 04 Apple Health (steps, used
+only for a check-in's steps question, seen by the coach once sent; per-account ask) · 05 Coaching:
+What Your Coach Sees (the box's words; dated typed weights; steps; why; private notes are the
+coach's records; how to stop) · 06 When Coaching Ends (end a former coach's view at any time) ·
+07 Deleting an Account That Is Part of Coaching (unchanged substance) · 08 Messages (a leaver can no
+longer read a group) · 09 Who We Share It With (a list: each provider, what it gets, where; Sentry
+scrubbed; PostHog without email; Anthropic only after permission; other members do not see date of
+birth, time zone or region; business sale) · 10 AI Features (permission, Settings, no names or
+medical details, request record only, Anthropic deletes after a short period) · 11 How Long We Keep
+Data (a list per kind; placeholders; providers asked to delete within 30 days) · 12 Your Rights
+(for everyone: access, copy, correct, delete with processors and coach told, withdraw, appeal with
+"Privacy Appeal"; within the time the law requires and at most 45 days, extendable once; Nevada 30
+days; GPC; India; the excluded countries; the CCPA line removed) · 13 Security (the real safeguards,
+provider encryption at rest, public vs private storage, breach notice: FTC 60 days, Florida 30
+days) · 14 Where Data Is Stored · 15 Children · 16 HIPAA (new) · 17 Changes · 18 Contact Us.
+
+### Consumer Health Data Privacy Policy (`pages/health-data.html`)
+
+Intro (Android planned) · 01 The Health Data We Collect, and Why (steps added; each category says
+why; lab files can hold sensitive details) · 02 Where It Comes From (weight and steps from Apple
+Health; per-account ask) · 03 Who Receives It (the coach as an independent business; the box's
+words; steps; a former coach until you end the view; providers as a list, with Apple and Google
+for notifications and Sentry scrubbed) · 04 Your Rights (list of recipients with contact details;
+private notes from the coach; processors and the coach told on deletion; backups; 45 days plus 45;
+Nevada 30 days; "Privacy Appeal") · 05 Withdrawing Consent (a former coach's view; Instant Add) ·
+06 How We Protect It (encryption at rest by the provider; private storage; breach notice) ·
+07 Changes and Contact (address).
+
+### Delete Your Account (`pages/delete-account.html`)
+
+Intro (one rule however you delete) · 01 In the App (unchanged) · 02 On the Coaching Website (the
+"exactly what the app does" line folded into the intro) · 03 By Email (within 30 days of confirming)
+· 04 Payments Stop First (a failed cancellation deletes nothing and you are told; Pro through Apple
+is not cancelled and the app reminds you; a coach refunds unused prepaid time) · 05 What Is
+Deleted (Sign in with Apple revoked; group-chat content you sent; the one photo exception stated
+once; agreements and settings) · 06 If You Are a Coach (unchanged) · 07 What We Keep (payment
+record period; backups period) · 08 Copies Held by Other Companies (Sentry, PostHog and RevenueCat
+asked to delete within 30 days; the RevenueCat "tax" reason dropped; Apple and Google) ·
+09 Uninstalling Is Not Deleting (does not cancel Pro) · 10 Questions (address).
+
+### Coach Agreement (`pages/coach-agreement.html`, new)
+
+Intro (between the coach and Fizeek LLC; accepted by the line above the coach sign-up buttons) ·
+01 You Are an Independent Business · 02 Fizeek Does Not Check Coaches · 03 Your Clients and Your
+Own Terms (each coach's own price, refund, cancellation and dispute terms; 16+, extra care under
+18; invite only people you may email) · 04 Licensing and the Limits of Your Advice (Florida
+468.504/468.505 example; general nutrition only unless licensed; no protected titles; no diagnosis
+or drugs; refer to a doctor; disclose paid links) · 05 Insurance (recommended; required where the
+law says) · 06 Client Information (the coach's own decisions and duties; no HIPAA use; report a
+leak; access ends when the client ends it) · 07 Payments Through Stripe (Stripe's agreement in
+Stripe's onboarding; accurate information; Stripe's privacy policy; Fizeek takes no fee) ·
+08 Refunds, Chargebacks, Disputes and Taxes (the coach owns them and repays Fizeek; refunds unused
+prepaid time; 7-day price notice; own taxes) · 09 Your Coach Plan (auto-renewal, cancel in the
+billing portal, no trial, locked when unpaid) · 10 Your Content, and What Your Clients Keep ·
+11 Suspension and Ending · 12 Indemnity and Liability · 13 Law, Disputes and Changes (Florida,
+Pinellas County) · 14 Contact Us.
