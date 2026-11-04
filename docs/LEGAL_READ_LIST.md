@@ -344,13 +344,14 @@ Section 04" quotes a sentence that is no longer on the page (it went in the batc
 **One postal address, one place:** every page prints it from `<span data-legal-address></span>`,
 filled by `legal-versions.js` from fizeek-sandbox `supabase/functions/_shared/legalAddress.ts`
 `LEGAL_POSTAL_ADDRESS` (read by `scripts/legal/legalVersions.mjs`; the coach invite email prints the
-same line; a placeholder until the owner decides; ruling 10).
+same line; ruling 10). 🔵 Batch AN (2026-11-03): 204 37th Avenue North #106, Saint Petersburg, FL 33704.
 
-**Placeholders the owner fills:** the postal address; `[agent's phone number, as registered]` and
-`[registration number]` (Terms 07); `[monthly price]` and `[yearly price]` (Terms 08; the app reads
-prices from the App Store and holds none); `[backup period]`, `[Sentry retention]`, `[PostHog
+**Placeholders the owner fills:** 🔵 batch AN (2026-11-03) filled the postal address, the DMCA phone
+and registration number (Terms 07, printed from `legal-versions.js` as `data-legal-dmca`), the US
+prices $4.99 / $39.99 (Terms 08, from fizeek-sandbox `storeProducts.ts:57-58`) and the Apple revoke
+date ("the date version 1.1.19 is released", Delete 05). Left: `[backup period]`, `[Sentry retention]`, `[PostHog
 retention]` (Privacy 11, Health Data 04, Delete 07); `[name]` for the India grievance contact
-(Privacy 12); `[Apple revoke ship date]` (Delete 05). Reconciled 11/3 against the code agents'
+(Privacy 12). Reconciled 11/3 against the code agents'
 reports (agent I's report § 11 lists every corrected sentence).
 
 ### Terms & Conditions (`pages/terms.html`)
