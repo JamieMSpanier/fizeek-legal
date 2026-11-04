@@ -5,7 +5,7 @@
   var V = {"terms":"2026-11-02","privacy":"2026-11-02","coach_agreement":"2026-11-02"};
   var A = "204 37th Avenue North #106, Saint Petersburg, FL 33704";
   var D = {"phone":"(813) 641-4662","registration":"DMCA-1070278"};
-  var F = {"backup":"7","posthog":"1 year","grievance":"Jamie Spanier"};
+  var F = {"backup":"7","posthog":"1 year","grievance":"Jamie Spanier","sentry":"30"};
   function long(v) {
     var p = v.split('-');
     return new Date(Date.UTC(+p[0], +p[1] - 1, +p[2])).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });

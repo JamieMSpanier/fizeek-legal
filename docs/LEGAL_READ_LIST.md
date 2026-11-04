@@ -352,8 +352,8 @@ prices $4.99 / $39.99 (Terms 08, from fizeek-sandbox `storeProducts.ts:57-58`) a
 date ("the date version 1.1.19 is released", Delete 05). 🔵 Batch AO (2026-11-03) filled the backup
 period (7 days; Privacy 11, Health Data 04, Delete 07), the PostHog retention (1 year; Privacy 11) and
 the India grievance contact (Jamie Spanier; Privacy 12), each printed from `legal-versions.js` as
-`data-legal-fact` (one line each in fizeek-sandbox `legalAddress.ts`). Left: `[Sentry retention]`
-(Privacy 11), which waits on whether the Sentry plan is paid (90 days) or free (30). The Pro prices
+`data-legal-fact` (one line each in fizeek-sandbox `legalAddress.ts`). 🔵 Batch AP (2026-11-03) filled the
+last one, the Sentry retention (30 days, the free plan; Privacy 11), the same way; no placeholder is left. The Pro prices
 were reviewed by Jamie and stay. Reconciled 11/3 against the code agents'
 reports (agent I's report § 11 lists every corrected sentence).
 
