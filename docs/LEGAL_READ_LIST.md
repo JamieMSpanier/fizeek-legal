@@ -349,9 +349,12 @@ same line; ruling 10). 🔵 Batch AN (2026-11-03): 204 37th Avenue North #106, S
 **Placeholders the owner fills:** 🔵 batch AN (2026-11-03) filled the postal address, the DMCA phone
 and registration number (Terms 07, printed from `legal-versions.js` as `data-legal-dmca`), the US
 prices $4.99 / $39.99 (Terms 08, from fizeek-sandbox `storeProducts.ts:57-58`) and the Apple revoke
-date ("the date version 1.1.19 is released", Delete 05). Left: `[backup period]`, `[Sentry retention]`, `[PostHog
-retention]` (Privacy 11, Health Data 04, Delete 07); `[name]` for the India grievance contact
-(Privacy 12). Reconciled 11/3 against the code agents'
+date ("the date version 1.1.19 is released", Delete 05). 🔵 Batch AO (2026-11-03) filled the backup
+period (7 days; Privacy 11, Health Data 04, Delete 07), the PostHog retention (1 year; Privacy 11) and
+the India grievance contact (Jamie Spanier; Privacy 12), each printed from `legal-versions.js` as
+`data-legal-fact` (one line each in fizeek-sandbox `legalAddress.ts`). Left: `[Sentry retention]`
+(Privacy 11), which waits on whether the Sentry plan is paid (90 days) or free (30). The Pro prices
+were reviewed by Jamie and stay. Reconciled 11/3 against the code agents'
 reports (agent I's report § 11 lists every corrected sentence).
 
 ### Terms & Conditions (`pages/terms.html`)
