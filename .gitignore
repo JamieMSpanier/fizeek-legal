@@ -1,5 +1,5 @@
 # Private working files: this repo is published as-is (GitHub Pages, from the root),
 # so nothing here may be committed. docs/ holds review notes and the fact sheet (batch BB).
-# ⚠️ docs/LEGAL_READ_LIST.md was tracked before this file existed; an ignore rule does not untrack it.
+# Ignored: .DS_Store and all of docs/, including docs/LEGAL_READ_LIST.md (untracked in batch BC).
 .DS_Store
 docs/
